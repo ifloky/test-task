@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">Loremipsum.<span>net</span></div>
+      <div class="header__navigation">
+        <ul>
+          <li><a href="/">Бизнес</a></li>
+          <li><a href="/">О нас</a></li>
+          <li><a href="/">Цены</a></li>
+          <li><a href="#orderForm">Оформить заказ</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="main__first-screen">
+      <div class="container">
+        <h1 class="main__head-text">
+          <span>Lorem ipsum </span> dolor sit amet consectetur <span>adipiscing</span>
+        </h1>
+        <div class="main__sub-text">
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+          <ul>
+            <li>Totam rem aperiam eaque ipsa</li>
+            <li>Sit voluptatem accusantium doloremque laudantium</li>
+            <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+          </ul>
+        </div>
+        <div class="main__button-block">
+          <a href="#orderForm" class="blue-btn main__button">Заказать</a>
+          <a href="/" class="white-btn main__button">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__order-screen">
+      <div class="container">
+        <h2 class="main__order-screen-head-text">Оформление <span>заказа</span></h2>
+        <p class="main__order-screen-sub-text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <div class="main__image-block">
+          <div class="main__image-block-step">
+            <img src="/src/image/search.svg" alt="search">
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="main__image-block-step">
+            <img src="/src/image/percent.svg" alt="search">
+            <p>Сonsecteturadipiscing elit</p>
+          </div>
+          <div class="main__image-block-step">
+            <img src="/src/image/file.svg" alt="search">
+            <p>Sed do eiusmod tempor</p>
+          </div>
+          <div class="main__image-block-step">
+            <img src="/src/image/letter.svg" alt="search">
+            <p>Esse cillum dolore eu fugiat</p>
+          </div>
+          <div class="main__image-block-step">
+            <img src="/src/image/dollar.svg" alt="search">
+            <p>Excepteur sint occaecat cupidatat non proident</p>
+          </div>
+        </div>
+        <form action="api.php" class="order-form main__order-form" id="orderForm">
+          <div class="order-form__first-block">
+            <select name="typeSystem" id="typeSystem">
+              Выберите тип системы
+              <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+              <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+              <option value="Et harum quidem">Et harum quidem</option>
+              <option value="Temporibus autem">Temporibus autem</option>
+              <option value="Itaque earum rerum">Itaque earum rerum</option>
+            </select>
+            <input type="email" name="email" id="email" placeholder="Ваш e-mail">
+            <input type="text" name="name" id="name" placeholder="Ваше имя">
+          </div>
+          <div class="order-form__second-block">
+            <div class="order-form__slider-container">
+              <div class="order-form__slider-info">
+                <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                <p id="customSliderInfo">75%</p>
+              </div>
+              <input type="range" min="1" max="100" value="75" class="order-form__slider" id="customSlider">
+            </div>
+            <div class="order-form__file-contailner">
+              <input name="file" type="file" id="input__file" class="input input__file" multiple>
+              <label for="input__file" class="input__file-button">
+                <span class="input__file-icon-wrapper"><img class="input__file-icon" src="./src/image/choose-file.svg"
+                    alt="Прикрепить файл"></span>
+                <span class="input__file-button-text">Прикрепить файл</span>
+              </label>
+            </div>
+
+          </div>
+          <input type="submit" value="ОТПРАВИТЬ" class="blue-btn order-form__submit">
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__license">© 2018 «LoremIpsum.net» Все права защищены.</div>
+      <div class="footer__pay">
+        <div class="footer__pay-item footer__pay-item_qiwi">Qiwi wallet</div>
+        <div class="footer__pay-item footer__pay-item_ym">Yandex Money</div>
+        <div class="footer__pay-item footer__pay-item_vw">Web Money</div>
+      </div>
+      <div class="footer__social">
+        <div class="footer__social-item footer__social-item_mail">
+          <a href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+        </div>
+        <div class="footer__social-item footer__social-item_vk">
+          <a href="vk.com">Мы вконтакте</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/js/index.js"></script>
+</body>
+
+</html>
